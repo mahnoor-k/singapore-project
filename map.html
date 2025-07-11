@@ -24,23 +24,137 @@
 
   <main>
     <section class="section-header">
-      <p>This 1942–45 military map of Singapore reveals key civilian sites and survival networks across Singapore during the Japanese Occupation.</p>
+      <h2>Surrendered Spaces: Life Mapped During the Japanese Occupation</h2>
+      <p>The Japanese wartime map of Singapore was a strategic military and administrative tool, detailing roads, railways, industrial zones, and renamed places under Japanese control. It reflects how the occupiers reimagined the island as “Syonan,” yet reveals little of the daily hardships, resistance, or human stories that unfolded. This digital map reclaims that space by overlaying key sites that reflect both the trauma and resilience of those who lived, fought, and survived during the Japanese Occupation.</p>
     </section>
 
-    <div class="map-container">
-      <img src="assets/map.jpg" alt="Historical Map of Singapore" class="map-image" />
+    <!-- <div class="map-container">
+      <img src="assets/map2.jpg" alt="Historical Map of Singapore" class="map-image" />
 
       <div class="map-pin pin-bukit-chandu" data-label="Bukit Chandu"></div>
       <div class="map-pin pin-ford-factory" data-label="Old Ford Factory"></div>
       <div class="map-pin pin-chinatown" data-label="Chinatown Soup Kitchen"></div>
       <div class="map-pin pin-japanese-school" data-label="Japanese School Zone"></div>
       <div class="map-pin pin-bomb-shelter" data-label="Makeshift Bomb Shelter"></div>
+    </div> -->
+    
+    <div class="map-container">
+      <img src="assets/map2.jpg" alt="Japanese Wartime Map of Singapore" class="map-image" />
+
+      <button class="map-pin pin-bukit-chandu" data-label="Bukit Chandu" data-modal-id="modal-bukit-chandu" aria-label="Bukit Chandu"></button>
+      <button class="map-pin pin-ford-factory" data-label="Former Ford Factory" data-modal-id="modal-ford-factory" aria-label="Old Ford Factory"></button>
+      <button class="map-pin pin-broadcasting" data-label="Syonan Broadcasting Station" data-modal-id="modal-broadcasting" aria-label="Syonan Broadcasting Station"></button>
+      <button class="map-pin pin-sime-road-camp" data-label="Sime Road Camp" data-modal-id="modal-sime-road-camp" aria-label="Sime Road Camp"></button>
+      <!-- <button class="map-pin pin-chinatown" data-label="Chinatown Soup Kitchen" data-modal-id="modal-chinatown" aria-label="Chinatown Soup Kitchen"></button> -->
+      <button class="map-pin pin-japanese-school" data-label="Syonan Nippon Gakuen" data-modal-id="modal-japan-school" aria-label="Syonan Nippon Gakuen (Syonan Japanese College)"></button>
+      <button class="map-pin pin-changi-prison" data-label="Changi Prison" data-modal-id="modal-changi-prison" aria-label="Changi Prison"></button>
     </div>
+
   </main>
+
+  <div class="popup-modal" id="modal-sime-road-camp">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Sime Road Camp</h3>
+      <img src="assets/sime-road-camp.jpg" alt="Sime Road Camp" />
+      <p>Following the Japanese invasion and British surrender in February 1942, Sime Road Camp was repurposed as a secondary internment camp, mainly for civilian detainees. It served as a backup to Changi Prison, with internees sometimes transferred between the two to manage overcrowding.</p>
+    </div>
+  </div>
+
+  <div class="popup-modal" id="modal-broadcasting">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Syonan Broadcasting Station</h3>
+      <img src="assets/broadcasting.jpg" alt="Syonan Broadcasting Station" />
+      <p>Renamed from the Malayan Broadcasting Corporation, the Syonan Broadcasting Station at Caldecott Hill operated under Japanese control during the occupation in 1942. It broadcast Japanese propaganda and news from Tokyo, serving as a critical tool for controlling information and shaping public morale. </p>
+    </div>
+  </div>
+
+  <div class="popup-modal" id="modal-sime-road-camp">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Sime Road Camp</h3>
+      <img src="assets/sime-road-camp.jpg" alt="Sime Road Camp" />
+      <p>Following the Japanese invasion and British surrender in February 1942, Sime Road Camp was repurposed as a secondary internment camp, mainly for civilian detainees. It served as a backup to Changi Prison, with internees sometimes transferred between the two to manage overcrowding.</p>
+    </div>
+  </div>
+
+  <div class="popup-modal" id="modal-changi-prison">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Changi Prison</h3>
+      <img src="assets/changi-prison.png" alt="Changi Prison" />
+      <p>During the Japanese occupation of Singapore, Changi Prison served as an internment camp for both prisoners of war and civilian detainees. Originally designed to hold around 600 inmates, the prison became severely overcrowded, at times housing more than 9,000 people. Conditions were extremely harsh, marked by overcrowding, limited supplies, and constant danger.</p>
+    </div>
+  </div>
+
+  <div class="popup-modal" id="modal-japan-school">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Syonan Nippon Gakuen (Syonan Japanese College)</h3>
+      <img src="assets/japanese-school.png" alt="Syonan Nippon Gakuen (Syonan Japanese College)" />
+      <p>To promote the learning of Japanese, the occupiers established dedicated language schools such as Syonan Nippon Gakuen in 1942. These schools enrolled students of various ages and backgrounds, requiring them to complete an intensive three-month course that taught the Japanese language along with the values and lifestyle promoted by the Japanese authorities.</p>
+    </div>
+  </div>
+
+  <div class="popup-modal" id="modal-ford-factory">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Former Fold Factory</h3>
+      <img src="assets/former-ford-factory.jpg" alt="Former Ford Factory" />
+      <p>The Former Ford Factory in Bukit Timah was the site where the British formally surrendered Singapore to the Japanese on 15 February 1942. Originally an assembly plant for Ford vehicles, it was seized by the Japanese and repurposed as the headquarters for their military administration.</p>
+    </div>
+  </div>
+
+  <div class="popup-modal" id="modal-bukit-chandu">
+    <div class="popup-content">
+      <span class="close-popup">&times;</span>
+      <h3>Bukit Chandu</h3>
+      <img src="assets/bukit-chandu.jpeg" alt="Bukit Chandu" />
+      <p>Bukit Chandu, also known as Opium Hill, was the site of a fierce final battle during the Japanese invasion in February 1942. It was here that soldiers from the Malay Regiment made a courageous last stand against overwhelming Japanese forces. Despite being outnumbered and poorly equipped, they fought to the end to defend Singapore.</p>
+    </div>
+  </div>
+
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const pins = document.querySelectorAll('.map-pin[data-modal-id]');
+
+    pins.forEach(pin => {
+      const modalId = pin.getAttribute('data-modal-id');
+      const modal = document.getElementById(modalId);
+      const closeBtn = modal.querySelector('.close-popup');
+
+      pin.addEventListener('click', (e) => {
+        // Hide all other popups first
+        document.querySelectorAll('.popup-modal').forEach(m => m.style.display = 'none');
+
+        // Position the popup near the clicked pin
+        const rect = pin.getBoundingClientRect();
+        const mapContainerRect = document.querySelector('.map-container').getBoundingClientRect();
+
+        modal.style.left = `${rect.left - mapContainerRect.left + 20}px`;
+        modal.style.top = `${rect.top - mapContainerRect.top - 10}px`;
+        modal.style.display = 'block';
+      });
+
+      closeBtn.addEventListener('click', () => {
+        modal.style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', (e) => {
+      if (!e.target.closest('.popup-modal') && !e.target.classList.contains('map-pin')) {
+        document.querySelectorAll('.popup-modal').forEach(m => m.style.display = 'none');
+      }
+    });
+  });
+  </script>
+
 
   <footer>
     <p>Created by Mahnoor Khan, for ‘A History of Singapore in Ten Objects’</p>
-    <p>Sources: NAS, NLB, Ford Factory Museum, Bukit Chandu</p>
+    <p>Sources: Ford Factory Museum, Moe Heritage Center, National Archives Singapore, Roots.gov.sg, NLB, Bukit Chandu</p>
   </footer>
 </body>
 </html>
